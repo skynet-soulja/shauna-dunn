@@ -7,7 +7,7 @@
         <div class="nav-left">
           <NuxtLink to="/">
             <h1 class="nav-home">
-              Shuana Dunn
+              Shauna Dunn
             </h1>
           </NuxtLink>
         </div>
