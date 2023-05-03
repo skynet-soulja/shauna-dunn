@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jewelries",
+  "info": {
+    "singularName": "jewelry",
+    "pluralName": "jewelries",
+    "displayName": "Jewelry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": false
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "jewelries"
+    }
+  }
+}
