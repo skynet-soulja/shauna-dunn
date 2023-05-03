@@ -45,9 +45,9 @@ const category = useCategory();
           All
         </ButtonSlim>
 
-        <ButtonSlim v-for="c in queryResults.data.categories.data"
-          :class="category === c.attributes.name ? 'is-active' : ''" @click="updateCategory(c.attributes.name)">
-          {{ c.attributes.name }}
+        <ButtonSlim v-for="c in queryResults?.data?.categories?.data"
+          :class="category === c?.attributes?.name ? 'is-active' : ''" @click="updateCategory(c?.attributes?.name)">
+          {{ c?.attributes?.name }}
         </ButtonSlim>
       </ul>
     </div>

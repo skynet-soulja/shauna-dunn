@@ -66,23 +66,23 @@ const pastelColors = ["#DFFFD8", "#7286D3", "#ECA869", "#A7727D", "#D0B8A8", "#B
     </div>
 
     <div class="work-cards">
-      <div v-for="(j, index) in queryResults.data.jewelries.data"
-        :class="`work-container index-${index} ${category === 'All' || j.attributes.category.data.attributes.name === category ? 'is-active' : ''}`">
-        <NuxtLink class="work-link" :to="`/work/${j.attributes.slug}`" />
+      <div v-for="(j, index) in queryResults?.data?.jewelries?.data"
+        :class="`work-container index-${index} ${category === 'All' || j.attributes?.category?.data?.attributes?.name === category ? 'is-active' : ''}`">
+        <NuxtLink class="work-link" :to="`/work/${j?.attributes?.slug}`" />
 
         <div class="work-card"
           :style="`background-color: ${index > pastelColors.length ? pastelColors[index - pastelColors.length] : pastelColors[index]}`">
           <div class="work-wrapper">
 
-            <img class="work-photo" :src="j.attributes.photo.data.attributes.url"
-              :srcset="generateCloudinarySRCSETURLs(j.attributes.photo.data.attributes.url).join(',')">
+            <img class="work-photo" :src="j?.attributes?.photo?.data?.attributes?.url"
+              :srcset="generateCloudinarySRCSETURLs(j?.attributes?.photo?.data?.attributes?.url).join(',')">
           </div>
         </div>
 
         <div class="work-text"
           :style="`color: ${index > pastelColors.length ? pastelColors[index - pastelColors.length] : pastelColors[index]}`">
-          <h1 v-if="j.attributes.title" class="work-title">
-            {{ j.attributes.title }}
+          <h1 v-if="j?.attributes?.title" class="work-title">
+            {{ j?.attributes?.title }}
           </h1>
         </div>
       </div>
