@@ -55,6 +55,8 @@ query {
 }`);
 
 const category = useCategory();
+
+const pastelColors = ["#DFFFD8", "#7286D3", "#ECA869", "#A7727D", "#D0B8A8", "#B1B2FF", "#B7C4CF"];
 </script>
 
 <template>
@@ -65,10 +67,11 @@ const category = useCategory();
 
     <div class="work-cards">
       <div v-for="(j, index) in queryResults.data.jewelries.data"
-        :class="`work-container ${category === 'All' || j.attributes.category.data.attributes.name === category ? 'is-active' : ''}`">
+        :class="`work-container index-${index} ${category === 'All' || j.attributes.category.data.attributes.name === category ? 'is-active' : ''}`">
         <NuxtLink class="work-link" :to="`/work/${j.attributes.slug}`" />
 
-        <div class="work-card">
+        <div class="work-card"
+          :style="`background-color: ${index > pastelColors.length ? pastelColors[index - pastelColors.length] : pastelColors[index]}`">
           <div class="work-wrapper">
 
             <img class="work-photo" :src="j.attributes.photo.data.attributes.url"
@@ -76,7 +79,8 @@ const category = useCategory();
           </div>
         </div>
 
-        <div class="work-text">
+        <div class="work-text"
+          :style="`color: ${index > pastelColors.length ? pastelColors[index - pastelColors.length] : pastelColors[index]}`">
           <h1 v-if="j.attributes.title" class="work-title">
             {{ j.attributes.title }}
           </h1>
