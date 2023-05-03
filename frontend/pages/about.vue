@@ -47,18 +47,18 @@ query {
   <div>
     <div class="about-container">
       <div class="headshot-wrapper">
-        <img class="headshot" :src="queryResults.data.about.data.attributes.headshot.data.attributes.url"
-          :srcset="generateCloudinarySRCSETURLs(queryResults.data.about.data.attributes.headshot.data.attributes.url).join(',')"
+        <img class="headshot" :src="queryResults?.data?.about?.data?.attributes?.headshot?.data?.attributes?.url"
+          :srcset="generateCloudinarySRCSETURLs(queryResults?.data?.about?.data?.attributes?.headshot?.data?.attributes?.url).join(',')"
           alt="">
       </div>
       <div class="bio-wrapper">
-        <p class="bio">{{ queryResults.data.about.data.attributes.bio }}</p>
-        <p v-if="queryResults.data.about.data.attributes.email">Email: <a
-            :href="`emailto:${queryResults.data.about.data.attributes.email}`">{{
-              queryResults.data.about.data.attributes.email }}</a></p>
-        <p v-if="queryResults.data.about.data.attributes.instagram">Instagram: <a
-            :href="`https://www.instagram.com/${queryResults.data.about.data.attributes.instagram}`">@{{
-              queryResults.data.about.data.attributes.instagram }}</a></p>
+        <p class="bio">{{ queryResults?.data?.about?.data?.attributes?.bio }}</p>
+        <p v-if="queryResults?.data?.about?.data?.attributes?.email">Email: <a
+            :href="`emailto:${queryResults?.data?.about?.data?.attributes?.email}`">{{
+              queryResults?.data?.about?.data?.attributes?.email }}</a></p>
+        <p v-if="queryResults?.data?.about?.data?.attributes?.instagram">Instagram: <a
+            :href="`https://www.instagram.com/${queryResults?.data?.about?.data?.attributes?.instagram}`">@{{
+              queryResults?.data?.about?.data?.attributes?.instagram }}</a></p>
       </div>
     </div>
   </div>

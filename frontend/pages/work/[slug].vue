@@ -62,13 +62,13 @@ query {
 
 const category = useCategory();
 
-const listOfJewelry = queryResults.data.jewelries.data;
-const listOfJewelryUnderCategory = listOfJewelry.filter(j => category.value === 'All' ? true : j.attributes.category.data.attributes.name === category.value);
-const currentJewelryIndex = listOfJewelryUnderCategory.findIndex(j => j.attributes.slug === useRoute().params.slug);
+const listOfJewelry = queryResults?.data?.jewelries?.data;
+const listOfJewelryUnderCategory = listOfJewelry?.filter(j => category.value === 'All' ? true : j?.attributes?.category?.data?.attributes?.name === category.value);
+const currentJewelryIndex = listOfJewelryUnderCategory?.findIndex(j => j?.attributes?.slug === useRoute().params.slug);
 const precedingJewelryIndex = currentJewelryIndex - 1;
 const procedingJewelryIndex = currentJewelryIndex + 1;
 
-const currentJewelry = listOfJewelryUnderCategory?.[currentJewelryIndex]
+const currentJewelry = listOfJewelryUnderCategory?.[currentJewelryIndex];
 const precedingJewelry = listOfJewelryUnderCategory?.[precedingJewelryIndex];
 const procedingJewelry = listOfJewelryUnderCategory?.[procedingJewelryIndex];
 

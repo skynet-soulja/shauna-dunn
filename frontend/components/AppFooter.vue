@@ -32,10 +32,10 @@ query {
         © {{ new Date().getFullYear() }} by Shauna Dunn
       </div>
       <div class="footer-right">
-        <span class="connect" v-if="queryResults.data.about.data.attributes.instagram"
+        <span class="connect" v-if="queryResults?.data?.about?.data?.attributes?.instagram"
           style="{font-style: bold;}">Connect: <a
-            :href="`https://www.instagram.com/${queryResults.data.about.data.attributes.instagram}`">@{{
-              queryResults.data.about.data.attributes.instagram }}</a></span>
+            :href="`https://www.instagram.com/${queryResults?.data?.about?.data?.attributes?.instagram}`">@{{
+              queryResults?.data?.about?.data?.attributes?.instagram }}</a></span>
       </div>
     </footer>
   </div>
