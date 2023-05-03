@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Aileron SemiBold';
+  font-style: normal;
+  font-display: swap;
+  src: url('~/assets/fonts/aileron/Aileron-SemiBold.otf') format('opentype');
+}
+
+html {
+  font-family: 'Aileron SemiBold', Courier, monospace;
+  letter-spacing: .05rem;
+}
+
+body {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #fff
+}
+
+a {
+  text-decoration: none;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-main: #B2A4FF;
+  --color-secondary: #FFB4B4;
+  --color-bg: #0f0f0f;
+}
