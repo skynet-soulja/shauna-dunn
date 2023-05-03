@@ -29,7 +29,7 @@ query {
   <div>
     <footer>
       <div class="footer-left">
-        © {{ new Date().getFullYear() }} by Shauna Dunn
+        © {{ new Date().getFullYear() }} by William Martin
       </div>
       <div class="footer-right">
         <span class="connect" v-if="queryResults?.data?.about?.data?.attributes?.instagram"
