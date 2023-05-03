@@ -179,6 +179,13 @@ const currentPhotoURL = currentJewelry.attributes.photo.data.attributes.url;
   background-color: #EBC3DB;
 }
 
+.title-wrapper,
+.category-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .title-wrapper {
   position: absolute;
   top: 2vh;
