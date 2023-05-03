@@ -320,11 +320,11 @@ const currentPhotoURL = currentJewelry.attributes.photo.data.attributes.url;
 
   .title,
   .category {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .navigation {
-    min-width: 9vw;
+    min-width: 10vw;
   }
 
   .photo {
@@ -333,11 +333,11 @@ const currentPhotoURL = currentJewelry.attributes.photo.data.attributes.url;
   }
 
   .title-wrapper {
-    top: 22vh;
+    top: 23vh;
   }
 
   .category-wrapper {
-    bottom: 22vh;
+    bottom: 23vh;
   }
 }
 </style>
