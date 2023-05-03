@@ -323,6 +323,10 @@ const currentPhotoURL = currentJewelry.attributes.photo.data.attributes.url;
     font-size: 14px;
   }
 
+  .navigation {
+    min-width: 9vw;
+  }
+
   .photo {
     height: 40%;
     top: 30%;
