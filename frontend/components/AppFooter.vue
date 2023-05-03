@@ -65,4 +65,26 @@ footer {
 a {
   text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+  footer {
+    padding-bottom: 60px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {
+  footer {
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: unset;
+  }
+
+  .footer-left {
+    margin-bottom: 12px;
+    margin-right: 12px;
+  }
+}
 </style>

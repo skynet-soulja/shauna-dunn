@@ -182,5 +182,42 @@ const category = useCategory();
   z-index: 3;
   transition: transform 200ms linear 0s;
 }
+
+@media (max-width: 1024px) {
+  .category {
+    font-size: 90px;
+  }
+
+  .work-container {
+    flex-basis: 100%;
+    max-width: 468px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {
+  .category-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .category {
+    font-size: 50px;
+  }
+
+  .work-container {
+    flex-basis: 100%;
+    max-width: 442px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category {
+    text-align: center;
+  }
+}
 </style>
 

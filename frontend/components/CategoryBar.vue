@@ -87,7 +87,7 @@ const category = useCategory();
 
 .category-to-top {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   pointer-events: auto;
   right: 30px;
   width: 50px;
@@ -121,5 +121,32 @@ const category = useCategory();
   height: 92%;
   backface-visibility: hidden;
   transform-origin: center center;
+}
+
+@media (max-width: 1024px) {
+  .category-to-top {
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-to-top {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-buttons {
+    padding: 0px 6px;
+    height: 50px;
+  }
+
+  .category-bar {
+    bottom: 0;
+    font-size: 12px;
+    height: 50px;
+  }
 }
 </style>

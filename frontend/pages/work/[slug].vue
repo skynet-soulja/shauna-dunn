@@ -231,4 +231,109 @@ const currentPhotoURL = currentJewelry.attributes.photo.data.attributes.url;
   left: 0;
   z-index: 1;
 }
+
+@media (max-width: 1280px) {
+  .photo {
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 88%;
+  }
+
+  .title,
+  .category {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .photo {
+    height: 80%;
+    top: 10%;
+  }
+
+  .title-wrapper {
+    top: 5vh;
+  }
+
+  .category-wrapper {
+    bottom: 5vh;
+  }
+}
+
+@media (max-width: 829px) {
+  .back-wrapper {
+    left: 5vw;
+  }
+
+  .photo {
+    height: 70%;
+    top: 15%;
+  }
+
+  .title-wrapper {
+    top: 10vh;
+  }
+
+  .category-wrapper {
+    bottom: 10vh;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .title,
+  .category {
+    font-size: 1.1rem;
+  }
+
+  .photo {
+    height: 56%;
+    top: 22%;
+  }
+
+  .title-wrapper {
+    top: 18vh;
+  }
+
+  .category-wrapper {
+    bottom: 18vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .photo {
+    height: 46%;
+    top: 27%;
+  }
+
+  .title-wrapper {
+    top: 20vh;
+  }
+
+  .category-wrapper {
+    bottom: 20vh;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .title,
+  .category {
+    font-size: 14px;
+  }
+
+  .photo {
+    height: 40%;
+    top: 30%;
+  }
+
+  .title-wrapper {
+    top: 22vh;
+  }
+
+  .category-wrapper {
+    bottom: 22vh;
+  }
+}
 </style>

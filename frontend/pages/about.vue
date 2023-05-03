@@ -95,9 +95,49 @@ query {
 
 p {
   margin-bottom: 1rem;
+  font-size: 16px;
 }
 
 a {
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .headshot-wrapper {
+    margin: 0;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {
+  .about-container {
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .bio-wrapper {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .bio {
+    font-size: 14px;
+    line-height: 1.4rem
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: .5rem
+  }
+
+  .headshot {
+    max-width: 82vw;
+  }
 }
 </style>

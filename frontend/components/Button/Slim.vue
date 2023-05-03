@@ -29,4 +29,11 @@
   color: var(--color-main);
   border: 1px solid var(--color-main);
 }
+
+@media (max-width: 640px) {
+  .slim-button {
+    min-width: 70px;
+    padding: 0 8px;
+  }
+}
 </style>
