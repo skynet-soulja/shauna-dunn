@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/strapi', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  modules: ['@nuxtjs/strapi', '@nuxtjs/tailwindcss'],
   strapi: {
-    devtools: true,
+    devtools: false,
   },
   css: [
     '@/assets/css/main.css',
